@@ -98,6 +98,9 @@ module.exports = {
       new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
     ],
   },
+    externals:{
+    'BMap':'BMap',
+    },
   module: {
     strictExportPresence: true,
     rules: [
